@@ -1,0 +1,44 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                 Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+/* Color Palette
+Forest Green #1b4332
+Sky Blue #a2d2ff
+Granite Gray #495057
+Warm Sand #e9c46a
+Snow White #f1faee
+Sage / Moss   #95b384 */
+
+#zen-intro > header {
+    background-color: #1b4332; 
+    color: #f1faee;            
+    padding: 40px 32px;
+    text-align: center;
+    border-radius: 16px;
+    margin: 24px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  #zen-intro h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  #zen-intro h2 {
+    color: #f1faee; 
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  abbr[title] {
+   text-decoration: none;
+   font-size: medium
+   
+  }
