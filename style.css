@@ -5,6 +5,22 @@
     line-height: 28px;
   }
 
+
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  
+}
+
+body, p, a {
+  font-family: 'Lora', serif;
+}
+h3 {
+  border-bottom: 3px solid #0a510e;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
 /* Color Palette
 Forest Green #1b4332
 Sky Blue #a2d2ff
@@ -89,6 +105,10 @@ Sage / Moss   #95b384 */
     margin: 0;
     letter-spacing: 1px;
   }
+
+  
+
+  
   
   #zen-intro h2 {
     color: #1b4332; 
@@ -102,13 +122,13 @@ Sage / Moss   #95b384 */
    font-size: medium
 
   }
-#zen-summary a{
-    text-decoration: none;
+ a{
+    text-decoration: underline;
     color:#1b4332;
     font-weight: 500;
     transition: color 0.2s ease, text-shadow 0.2s ease;
 }
-#zen-summary a:hover {
+ a:hover {
   color: #958866;
   text-shadow: 0 0 8px #e1ca92;
 }
@@ -129,8 +149,6 @@ Sage / Moss   #95b384 */
   position:absolute; left:-36px; top:8px;
   font-size:1.5rem;
 }
-
-
 
 
 
