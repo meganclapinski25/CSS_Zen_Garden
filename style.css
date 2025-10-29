@@ -37,17 +37,28 @@ Sage / Moss   #95b384 */
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 40px;
+    align-items: stretch;
+    margin-bottom: 200px;
   }
+
+
+
 
 
 #zen-summary {
   order: 2;
   flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;        
+  gap: 12px; 
   background-color: #f1faee; 
   color: #1b4332; 
   max-width: 25%;
   padding: 28px 24px;
-  text-align: left;
+  text-align: center;
   border-radius: 16px;
   margin:0;
   box-shadow: 0 4px 20px 6px rgba(0, 0, 0, 0.15);
@@ -101,6 +112,25 @@ Sage / Moss   #95b384 */
   color: #958866;
   text-shadow: 0 0 8px #e1ca92;
 }
+
+
+
+
+
+#zen-supporting > div {
+  background:#f1faee;
+  border-left:6px solid #1b4332;
+  padding:28px;
+  margin-bottom:40px;
+  position:relative;
+}
+#zen-supporting > div::before{
+ 
+  position:absolute; left:-36px; top:8px;
+  font-size:1.5rem;
+}
+
+
 
 
 
