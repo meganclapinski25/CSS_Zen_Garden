@@ -13,15 +13,64 @@ Warm Sand #e9c46a
 Snow White #f1faee
 Sage / Moss   #95b384 */
 
+
+#css-zen-garden { 
+    background-color: #95b384;
+}
+
+
 #zen-intro > header {
-    background-color: #1b4332; 
-    color: #f1faee;            
+    background-color: #f1faee; 
+    color: #1b4332;            
     padding: 40px 32px;
     text-align: center;
     border-radius: 16px;
     margin: 24px auto;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: 2px dashed #1b4332;
+    border-radius: 16px;
+    width:100%;
+    margin-bottom: 24px;
   }
+  #zen-intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+
+#zen-summary {
+  order: 2;
+  flex: 0 0 25%;
+  background-color: #f1faee; 
+  color: #1b4332; 
+  max-width: 25%;
+  padding: 28px 24px;
+  text-align: left;
+  border-radius: 16px;
+  margin:0;
+  box-shadow: 0 4px 20px 6px rgba(0, 0, 0, 0.15);
+  border: 2px dashed #1b4332;
+  border-radius: 16px;
+  
+}
+
+#zen-preamble {
+  order: 1;
+  flex: 1 0 0;
+  max-width: 75%;
+  background-color: #f1faee; 
+  color: #1b4332; 
+  padding: 28px 24px;
+  text-align: left;
+  border-radius: 16px;
+  margin: 0;
+  box-shadow: 0 4px 20px 6px rgba(0, 0, 0, 0.15);
+  border: 2px dashed #1b4332;
+  border-radius: 16px;
+  
+}
   
   #zen-intro h1 {
     font-size: 2.6rem;
@@ -31,7 +80,7 @@ Sage / Moss   #95b384 */
   }
   
   #zen-intro h2 {
-    color: #f1faee; 
+    color: #1b4332; 
     margin-top: 10px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -40,5 +89,18 @@ Sage / Moss   #95b384 */
   abbr[title] {
    text-decoration: none;
    font-size: medium
-   
+
   }
+#zen-summary a{
+    text-decoration: none;
+    color:#1b4332;
+    font-weight: 500;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+#zen-summary a:hover {
+  color: #958866;
+  text-shadow: 0 0 8px #e1ca92;
+}
+
+
+
