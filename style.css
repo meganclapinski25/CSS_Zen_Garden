@@ -5,8 +5,7 @@
     line-height: 28px;
   }
 
-
-
+  
 h1, h2, h3 {
   font-family: 'Bebas Neue', sans-serif;
   
@@ -15,6 +14,7 @@ h1, h2, h3 {
 body, p, a {
   font-family: 'Lora', serif;
 }
+
 h3 {
   border-bottom: 3px solid #0a510e;
   display: inline-block;
@@ -48,6 +48,7 @@ Sage / Moss   #95b384 */
     width:100%;
     margin-bottom: 24px;
   }
+  
   #zen-intro {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +56,7 @@ Sage / Moss   #95b384 */
     gap: 40px;
     align-items: stretch;
     margin-bottom: 200px;
+    width: 100%;
   }
 
 
@@ -143,6 +145,8 @@ Sage / Moss   #95b384 */
   padding:28px;
   margin-bottom:40px;
   position:relative;
+  
+  border-radius: 14px;
 }
 #zen-supporting > div::before{
  
@@ -152,3 +156,44 @@ Sage / Moss   #95b384 */
 
 
 
+
+/* for sidebar to get up the page more */ 
+.page-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px; 
+  grid-template-areas:
+    "intro intro"
+    "support aside";
+  gap: 32px;
+  align-items: start;
+}
+
+#zen-intro {
+  grid-area: intro;           
+  width: 100%;
+}
+
+/* Supporting content sits in the left column */
+#zen-supporting {
+  grid-area: support;
+}
+aside.sidebar {
+  grid-area: aside;
+  position: static;           
+  align-self: center;/* ← remove sticky */
+  max-height: none;
+  background: #f1faee;
+  border: 1px solid rgba(27, 67, 50, 0.25);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  padding: 16px;
+  height: fit-content;
+}
+footer{
+  background: #f1faee;
+  padding : 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(27, 67, 50, 0.25);
+  grid-area: intro;
+  width: 100%;
+}
