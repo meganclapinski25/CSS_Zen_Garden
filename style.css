@@ -119,7 +119,7 @@ Sage / Moss   #95b384 */
     font-weight: 500;
     text-decoration: none;
   }
-  abbr[title] {
+  abbr {
    text-decoration: none;
    font-size: medium
 
@@ -189,11 +189,25 @@ aside.sidebar {
   padding: 16px;
   height: fit-content;
 }
-footer{
+footer {
+  border: 2px dashed black;
+  margin-top: 40px;
   background: #f1faee;
-  padding : 20px;
-  border-radius: 14px;
-  border: 1px solid rgba(27, 67, 50, 0.25);
-  grid-area: intro;
-  width: 100%;
+  padding: 20px 32px;         /* adds space inside on left/right */
+  border-radius: 12px;
+  box-sizing: border-box;
+  max-width: 1200px;          /* keeps it from getting too wide on large screens */
+  width: 90%;                 /* responsive: 90% of screen width */
+  margin-left: 200px;
+  text-align: center;         
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+footer a{
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: 2px solid #0a510e;
+  
+  padding-bottom: 2px;
+  
 }
